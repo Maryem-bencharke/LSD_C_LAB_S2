@@ -7,17 +7,17 @@ int main()
         int res;
         clock_t begin, end;
 
-        /* Calling recursive fibonacci function */
-        begin = clock(); // get the time of begining
+        
+        begin = clock(); 
         res = recursive_fibo(i);
-        end = clock(); // get the time of ending
+        end = clock(); 
         printf("recursive_fibo(%d) = %d \tTime elpased is %f\n",
             i,res, (double)(end - begin) / CLOCKS_PER_SEC);
 
-        /* Calling iterative fibonacci function */
-        begin = clock(); // get the time of begining
+        
+        begin = clock(); 
         res = iterative_fibo(i);
-        end = clock(); // get the time of ending
+        end = clock(); 
         printf("iterative_fibo(%d) = %d \tTime elpased is %f\n",
             i, res, (double)(end - begin) / CLOCKS_PER_SEC);
         printf("==========================================================\n");
