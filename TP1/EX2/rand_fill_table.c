@@ -8,5 +8,16 @@
 */
 void rand_fill_table(int *tab, int size)
 {
-    // fill up your table here with randome elements between 10 and 100
+   int T[1000];
+	/*int max1,max2,max3;*/
+	int i;
+	srand(time(NULL));
+	for(i=0;i<1000;i++){
+		T[i]= 1+ rand()%1000;
+		}
+	for(i=0;i<1000;i++){
+		printf("T[%d]:%d\n",i,T[i]);
+	}
+		printf("T[%d]:%d\n",i,T[i]);
+	return 0;
 }
