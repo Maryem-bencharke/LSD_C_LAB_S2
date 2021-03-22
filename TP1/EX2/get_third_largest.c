@@ -7,5 +7,20 @@
 */
 int     get_third_largest(int *tab, int size)
 {
-        // write your algo here
+	int max1,max2,max3;
+	int i;
+	max1=-1;
+	max2=-1;
+	max3=-1;
+	for(i=0;i<size;i++)
+		if(T[i]>max1)
+			max1=T[i];
+	for(i=0;i<size;i++)
+		if(T[i]>max2 && T[i]<max1)
+			max2=T[i];
+	for(i=0;i<size;i++)
+		if(T[i]>max3 && T[i]<max2)
+			max3=T[i];
+   printf("le 3eme max = %d\n",max3);
+	return 0;
 }
